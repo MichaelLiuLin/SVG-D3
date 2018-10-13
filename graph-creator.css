@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+p{
+     text-align: center;
+     overflow: overlay;
+     position: relative;
+}
+
+body{
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgb(248, 248, 248)
+}
+
+#toolbox{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 1em;
+    z-index: 5;
+}
+
+#toolbox input{
+    width: 30px;
+    opacity: 0.4;
+}
+#toolbox input:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#hidden-file-upload{
+    display: none;
+}
+
+#download-input{
+    margin: 0 0.5em;
+}
+
+.conceptG text{
+    pointer-events: none;
+}
+
+marker{
+    /* fill: #333; */
+}
+
+g.conceptG circle{
+    fill: #E0E0E0;
+
+    //fill:grey;
+    stroke: #C0C0C0;
+    stroke-width: 7px;
+}
+
+g.conceptG:hover circle{
+    fill: white;
+}
+
+/* //M; Mmousedown and mouseout  */
+g.selected circle{
+
+    fill:#cccc00;
+
+}
+g.selected:hover circle{
+  //stroke: red;
+    //fill: rgb(250, 232, 255);
+    fill:yellow;
+
+}
+
+path.link {
+    fill: none;
+    stroke: #333;
+    stroke-width: 6px;
+    cursor: default;
+}
+
+path.link:hover{
+    //stroke: rgb(94, 196, 204);
+    stroke:white;
+}
+
+/* M; text color */
+g.connect-node circle{
+    //fill: #BEFFFF;
+    fill:red;
+}
+
+path.link.hidden{
+    stroke-width: 0;
+}
+
+path.link.selected {
+    //stroke: rgb(100, 172, 247);
+    stroke:#cccc00;
+}
+
+.rectangles{
+  stroke:black;
+  //stroke-linecap: butt;
+  stroke-width:3;
+  fill:none;
+  //fill:powderblue;
+}
